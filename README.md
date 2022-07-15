@@ -31,7 +31,7 @@ YAMls baixados da plataforma openshift evidênciando a criação de um banco de 
 - YAML do serviço do sample-database
 - YAML do persistent volume claim
 
-## ETAPA 3 - Entregaváeis
+## ETAPA 3 - Entregáveis
 
 YAML de HPA criado para a aplicação
 
