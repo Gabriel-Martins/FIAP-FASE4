@@ -23,6 +23,7 @@ Yamls baixados da plataforma openshift evidênciando o deployment de uma aplica�
 - YAML de serviço da aplicação
 - YAML de HPA da aplicação
 
+http://blog-django-py-git-rm-343471.apps.na46a.prod.ole.redhat.com/
 ![image](https://user-images.githubusercontent.com/13898332/179131965-f7b29651-6756-4d8b-bb41-1648cf3c92d5.png)
 
 YAMls baixados da plataforma openshift evidênciando a criação de um banco de dados com persistência de dados
@@ -30,7 +31,7 @@ YAMls baixados da plataforma openshift evidênciando a criação de um banco de 
 - YAML do serviço do sample-database
 - YAML do persistent volume claim
 
-## ETAPA 3 - Entregaáeis
+## ETAPA 3 - Entregaváeis
 
 YAML de HPA criado para a aplicação
 
