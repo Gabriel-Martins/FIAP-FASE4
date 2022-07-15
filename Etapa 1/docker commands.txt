@@ -1,0 +1,2 @@
+docker build -f dockerfile -t meu-blog .
+docker run -d -p 8180:80 meu-blog

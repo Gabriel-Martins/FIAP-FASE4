@@ -1,0 +1,5 @@
+### Stage 1 (Build)
+FROM quay.io/gmartinsss/rm343471-do180-custom-httpd:v1.1 as teste-fiap-rm343471
+ENV MINHA_VARIAVEL="VARIAVEL DE AMBIENTE! UHU"
+RUN echo "OPA - $MINHA_VARIAVEL" >> /var/www/html/index.html
+

@@ -1,0 +1,72 @@
+﻿kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  annotations:
+    openshift.io/host.generated: 'true'
+  selfLink: /apis/route.openshift.io/v1/namespaces/rm-343471/routes/blog-django-py-git
+  resourceVersion: '97238465'
+  name: blog-django-py-git
+  uid: da705d07-0194-4c01-af89-43e097d81118
+  creationTimestamp: '2022-07-14T02:26:37Z'
+  managedFields:
+    - manager: Mozilla
+      operation: Update
+      apiVersion: route.openshift.io/v1
+      time: '2022-07-14T02:26:37Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:labels':
+            .: {}
+            'f:app': {}
+            'f:app.kubernetes.io/component': {}
+            'f:app.kubernetes.io/instance': {}
+            'f:app.kubernetes.io/name': {}
+            'f:app.kubernetes.io/part-of': {}
+            'f:app.openshift.io/runtime': {}
+            'f:app.openshift.io/runtime-version': {}
+        'f:spec':
+          'f:port':
+            .: {}
+            'f:targetPort': {}
+          'f:to':
+            'f:kind': {}
+            'f:name': {}
+            'f:weight': {}
+          'f:wildcardPolicy': {}
+    - manager: openshift-router
+      operation: Update
+      apiVersion: route.openshift.io/v1
+      time: '2022-07-14T02:26:37Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:status':
+          'f:ingress': {}
+  namespace: rm-343471
+  labels:
+    app: blog-django-py-git
+    app.kubernetes.io/component: blog-django-py-git
+    app.kubernetes.io/instance: blog-django-py-git
+    app.kubernetes.io/name: python
+    app.kubernetes.io/part-of: blog-django-py-git-app
+    app.openshift.io/runtime: python
+    app.openshift.io/runtime-version: 3.8-ubi7
+spec:
+  host: blog-django-py-git-rm-343471.apps.na46a.prod.ole.redhat.com
+  to:
+    kind: Service
+    name: blog-django-py-git
+    weight: 100
+  port:
+    targetPort: 8080-tcp
+  wildcardPolicy: None
+status:
+  ingress:
+    - host: blog-django-py-git-rm-343471.apps.na46a.prod.ole.redhat.com
+      routerName: default
+      conditions:
+        - type: Admitted
+          status: 'True'
+          lastTransitionTime: '2022-07-14T02:26:37Z'
+      wildcardPolicy: None
+      routerCanonicalHostname: apps.na46a.prod.ole.redhat.com
